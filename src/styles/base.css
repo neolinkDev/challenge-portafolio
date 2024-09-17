@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #edff71;
+  --secondary-color: #27363d;
+  --tertiary-color: #d0efef;
+  --white-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Urbanist", system-ui, -apple-system, sans-serif;
+  font-size: 1.6rem;
+}
+
+/*
+=============== 
+  Utilities
+===============
+*/
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
