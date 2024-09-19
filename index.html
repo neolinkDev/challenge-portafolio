@@ -80,30 +80,31 @@
     <main>
       <!-- hero -->
       <section class="hero container padding-section">
-        <img class="hero__image" src="public/profile.png" alt="Descripción de la imagen hero">
+
+        <picture>
+          <source srcset="public/profile.avif" type="image/avif">
+          <source srcset="public/profile.webp" type="image/webp">
+          <img class="hero__image" src="public/profile.jpg" alt="Descripción de la imagen hero">
+        </picture>
+
         <div class="hero__content">
-          <h1 class="hero__title" id="hero__title">Hola, mi nombre es Fulana de Tal y construyo paginas web</h1>
-          <p class="hero__description">Soy formado en lorem ipsum sit amet consectetur y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</p>
+
+          <h1 class="hero__title">
+            Hola, mi nombre es <span>Jorge Rubio</span> y construyo paginas web
+          </h1>
+
+          <p class="hero__description">Soy formado en lorem ipsum sit amet consectetur y actualmente estoy participando en el proyecto <span>Oracle ONE en Alura Latam</span>.</p>
+
           <nav class="hero__social-media" aria-label="Redes sociales">
             <ul class="hero__social-list">
               <li class="hero__social-item">
-                <a href="#" class="hero__social-link" aria-label="Visita mi perfil de Github">
-                  Github <img src="public/arrow.png" alt="Flecha">
+                <a href="https://github.com/neolinkDev" target="_blank" rel="noopener" class="hero__social-link" aria-label="Visita mi perfil de Github">
+                  Github <img src="public/arrow.svg" alt="Flecha">
                 </a>
               </li>
               <li class="hero__social-item">
-                <a href="#" class="hero__social-link" aria-label="Visita mi perfil de Linkedin">
-                  LinkedIn <img src="public/arrow.png" alt="Flecha">
-                </a>
-              </li>
-              <li class="hero__social-item">
-                <a href="#" class="hero__social-link" aria-label="Visita mi perfil de Instagram">
-                  Instagram <img src="public/arrow.png" alt="Flecha">
-                </a>
-              </li>
-              <li class="hero__social-item">
-                <a href="#" class="hero__social-link" aria-label="Descarga mi currículo">
-                  Currículo <img src="public/arrow.png" alt="Flecha">
+                <a href="https://www.linkedin.com/in/jorge-rubio-dev/" target="_blank" rel="noopener" class="hero__social-link" aria-label="Visita mi perfil de LinkedIn">
+                  LinkedIn <img src="public/arrow.svg" alt="Flecha">
                 </a>
               </li>
             </ul>
