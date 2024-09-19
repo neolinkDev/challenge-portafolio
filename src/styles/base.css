@@ -40,9 +40,14 @@ ul {
 ===============
 */
 .container {
-  max-width: 144rem;
+  /* max-width: 144rem; */
   /* width: 100%; */
+  max-width: 1136px;
   margin: 0 auto;
+}
+
+.padding-section {
+  padding: 1.6rem;
 }
 
 .hidden {
