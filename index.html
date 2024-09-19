@@ -14,13 +14,69 @@
     <noscript
       ><link rel="stylesheet" href="src/styles/normalize.css"
     /></noscript>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preload" href="src/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="src/styles/main.css"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="src/styles/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="src/styles/main.css" /></noscript>
   </head>
   <body>
-    <h1>Portafolio</h1>
+    <!-- header -->
+    <header class="header">
+      <div class="header__logo-menu">
+        <a href="#" class="header__link" aria-label="Ir a la página principal">
+          <img
+            src="public/jr-logo.svg"
+            alt="Logo JR"
+            class="header__logo"
+          />
+          <span class="header__name">Jorge Rubio</span>
+        </a>
+  
+        <button class="header__button" id="toggle-button" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 18v2H5v-2zm5-7v2H3v-2zm-2-7v2H8V4z"/></svg>
+        </button>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list" id="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#item1" class="main-nav__link">Sobre mí</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#item2" class="main-nav__link">Skills</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#item3" class="main-nav__link">Hobbies</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#item4" class="main-nav__link">Formación</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#item5" class="main-nav__link">Proyectos</a>
+          </li>
+          <li class="main-nav__item">
+            <a 
+              href="mailto:jorge@programmer.net" 
+              class="main-nav__link main-nav__link--email" 
+              aria-label="Enviar un correo a jorge@programmer.net"
+            >
+              jorge@programmer.net
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- fin del header -->
+
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

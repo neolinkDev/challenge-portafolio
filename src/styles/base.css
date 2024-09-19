@@ -21,6 +21,17 @@ html {
 body {
   font-family: "Urbanist", system-ui, -apple-system, sans-serif;
   font-size: 1.6rem;
+  background-color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*
@@ -29,7 +40,11 @@ body {
 ===============
 */
 .container {
-  max-width: 120rem;
-  width: 90%;
+  max-width: 144rem;
+  /* width: 100%; */
   margin: 0 auto;
+}
+
+.hidden {
+  display: none;
 }
