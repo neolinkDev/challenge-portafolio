@@ -1,0 +1,45 @@
+.sobre-mi {
+  background-color: var(--white-color);
+}
+
+.sobre-mi__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media(min-width: 992px) {
+  .sobre-mi__content {
+    padding: 3.2rem 10px;
+  }
+}
+
+@media(min-width: 1155px) {
+  .sobre-mi__content {
+    padding: 3.2rem 0;
+  }
+}
+
+.sobre-mi__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+@media(min-width: 992px) {
+  .sobre-mi__title {
+    font-size: 3.2rem;
+  }
+}
+
+.sobre-mi__text {
+  font-size: 1.4rem;
+  max-width: 75ch;
+  color: var(--secondary-color);
+}
+
+@media(min-width: 992px) {
+  .sobre-mi__text {
+    font-size: 1.6rem;
+  }
+}
