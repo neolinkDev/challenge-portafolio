@@ -58,6 +58,11 @@ h1 {
 .padding-section {
   padding: 1.6rem;
 }
+@media(min-width: 768px){
+  .padding-section {
+    padding: 4rem 3.2rem;
+  }
+}
 
 .hidden {
   display: none;
