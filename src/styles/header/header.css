@@ -141,17 +141,17 @@
   }
 }
 
-.main-nav__link--email {
+.main-nav__link--contact {
   text-align: right;
   font-weight: 700;
 }
 
-.main-nav__link--email:hover {
+/* .main-nav__link--contact:hover {
   color: var(--tertiary-color);
-}
+} */
 
 @media (min-width: 992px) {
-  .main-nav__link--email {
+  .main-nav__link--contact {
     margin-right: 0;
   }
 }

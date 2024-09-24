@@ -63,6 +63,10 @@ h1, h2 {
   }
 }
 
+.padding-section-2 {
+  padding: 3.2rem;
+}
+
 .hidden {
   visibility: hidden;
 }

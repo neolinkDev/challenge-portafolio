@@ -64,6 +64,9 @@
             <a href="#projects" class="main-nav__link">Proyectos</a>
           </li>
           <li class="main-nav__item">
+            <a href="#contact" class="main-nav__link main-nav__link--contact">contacto@jorge.com</a>
+          </li>
+          <!-- <li class="main-nav__item">
             <a 
               href="mailto:jorge@programmer.net" 
               class="main-nav__link main-nav__link--email" 
@@ -71,7 +74,7 @@
             >
               jorge@programmer.net
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -308,6 +311,51 @@
 
       </section>
       <!-- fin sección proyectos -->
+
+      <!-- coctacto -->
+      <section class="contact" id="contact">
+      
+        <div class="contact__content container padding-section-2">
+
+          <picture >
+            <source srcset="public/contact-img.avif" type="image/avif">
+            <img class="contact__img" src="public/contact-img.jpeg" alt="Imagen de contacto" loading="lazy">
+          </picture>
+
+          <div>
+            <h2 class="contact__title">Contacto</h2>
+            <p class="contact__text">¿Quieres contactarme?</p>
+            <p class="contact__text">Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
+        
+            <form class="form-group">
+              <div class="form-item">
+                <input type="text" id="name" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
+                <label for="name">Nombre</label>
+              </div>
+              
+              <div class="form-item">
+                <input type="text" id="email" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
+                <label for="email">Correo electrónico</label>
+              </div>
+
+              <div class="form-item">
+                <input type="text" id="subject" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
+                <label for="subject">Asunto</label>
+              </div>
+
+              <div class="form-item">
+                <textarea id="message" class="form-control form-control--textarea" placeholder=" " required></textarea>
+                <label for="message">Mensaje</label>
+              </div>
+
+              <button class="btn btn--submit" type="submit" disabled>Enviar mensaje</button>
+            </form>
+          </div>
+      
+        </div>
+      
+      </section>
+      <!-- fin seccion contacto -->
 
     </main>
     <!-- fin main -->
