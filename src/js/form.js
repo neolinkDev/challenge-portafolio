@@ -12,6 +12,7 @@
 // `$` Hace referencia a que es una variable del DOM
 const $form = document.getElementById('form');
 const $submitBtn = document.querySelector('.btn--submit');
+  
 
 const $errorName = document.getElementById('error-name');
 const $errorMail = document.getElementById('error-mail');
@@ -39,24 +40,27 @@ document.addEventListener('input', (e) => {
   }
 });
 
-// Evento submit
-$form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  
-  const isValid =
-    validateInputName() &&
-    validateInputEmail() &&
-    validateInputSubject() &&
-    validateTextareaMessage();
 
-  if(isValid){
-    alert('Tu mensaje ha sido enviado.');
-    $form.reset();
-    $submitBtn.disabled = true;
-  }
+/**
+ * Función para manejar el evento submit del formulario
+ */
+export function handleFormSubmit() {
+  $form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const isValid =
+      validateInputName() &&
+      validateInputEmail() &&
+      validateInputSubject() &&
+      validateTextareaMessage();
 
-})
-
+    if (isValid) {
+      alert('Tu mensaje ha sido enviado.');
+      $form.reset();
+      $submitBtn.disabled = true;
+    }
+  });
+}
 
 /**
  * Valida que los campos no esten vacíos para habilitar el botón submit
