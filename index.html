@@ -103,7 +103,7 @@
           <nav class="hero__social-media" aria-label="Redes sociales">
             <ul class="hero__social-list">
               <li class="hero__social-item">
-                <a href="https://github.com/neolinkDev" target="_blank" rel="noopener" class="hero__social-link" aria-label="Visita mi perfil de Github">
+                <a href="#" class="hero__social-link" aria-label="Visita mi perfil de Github">
                   Github <img src="public/arrow.svg" alt="Flecha">
                 </a>
               </li>
@@ -327,28 +327,32 @@
             <p class="contact__text">¿Quieres contactarme?</p>
             <p class="contact__text">Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
         
-            <form class="form-group">
+            <form class="form-group" id="form">
               <div class="form-item">
-                <input type="text" id="name" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
+                <input type="text" id="name" name="name" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
                 <label for="name">Nombre</label>
+                <span id="error-name" class="error"></span>
               </div>
               
               <div class="form-item">
-                <input type="text" id="email" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
+                <input type="text" id="email" name="email" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
                 <label for="email">Correo electrónico</label>
+                <span id="error-mail" class="error"></span>
               </div>
 
               <div class="form-item">
-                <input type="text" id="subject" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
+                <input type="text" id="subject" name="subject" class="form-control form-control--input" placeholder=" " autocomplete="off" required>
                 <label for="subject">Asunto</label>
+                <span id="error-subject" class="error"></span>
               </div>
 
               <div class="form-item">
-                <textarea id="message" class="form-control form-control--textarea" placeholder=" " required></textarea>
+                <textarea id="message" name="message" class="form-control form-control--textarea" placeholder=" " required></textarea>
                 <label for="message">Mensaje</label>
+                <span id="error-message" class="error"></span>
               </div>
 
-              <button class="btn btn--submit" type="submit" disabled>Enviar mensaje</button>
+              <button class="btn btn--submit" type="submit" disabled aria-live="polite">Enviar mensaje</button>
             </form>
           </div>
       
@@ -360,6 +364,7 @@
     </main>
     <!-- fin main -->
 
-    <script type="module" src="src/js/main.js"></script>
+    <!-- <script type="module" src="src/js/main.js"></script> -->
+    <script type="module" src="src/js/form.js"></script>
   </body>
 </html>
