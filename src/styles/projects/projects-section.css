@@ -157,3 +157,8 @@
     width: 105px;
   }
 }
+
+.btn__content button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

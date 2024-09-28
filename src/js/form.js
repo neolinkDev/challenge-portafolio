@@ -13,7 +13,6 @@
 const $form = document.getElementById('form');
 const $submitBtn = document.querySelector('.btn--submit');
   
-
 const $errorName = document.getElementById('error-name');
 const $errorMail = document.getElementById('error-mail');
 const $errorSubject = document.getElementById('error-subject');

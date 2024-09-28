@@ -4,8 +4,10 @@
 
 import { showHideHamburgerMenu } from './hamburger-button.js';
 import { handleFormSubmit } from './form.js';
+import { yearFn } from './year.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   showHideHamburgerMenu();
   handleFormSubmit();
+  yearFn();
 });
