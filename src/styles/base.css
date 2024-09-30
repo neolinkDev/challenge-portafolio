@@ -9,6 +9,7 @@ html {
   box-sizing: border-box;
   /* 1 rem = 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -48,23 +49,22 @@ h1, h2 {
 ===============
 */
 .container {
-  /* max-width: 144rem; */
-  /* width: 100%; */
   max-width: 1136px;
   margin: 0 auto;
 }
 
 .padding-section {
-  padding: 1.6rem;
+  padding: 9.5rem 1.6rem;
 }
 @media(min-width: 768px){
   .padding-section {
-    padding: 4rem 3.2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 }
 
 .padding-section-2 {
-  padding: 3.2rem;
+  padding: 9.5rem 1.6rem;
 }
 
 .hidden {
